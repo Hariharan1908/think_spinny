@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary Colors */
+    --primary-orange: #f27516;
+    --primary-dark: #2d2d2d;
+    --primary-white: #ffffff;
+    
+    /* Gray Shades */
+    --primary-gray-100: #f8f8fb;
+    --primary-gray-200: #eff2f6;
+    --primary-gray-300: #d9d9d9;
+    --primary-gray-400: #8f8f8f;
+    --primary-gray-500: #4c4c4c;
+    --primary-gray-600: #68615a;
+    
+    /* Background Colors */
+    --background-light: #fff4ed;
+    --background-lighter: #fff9ef;
+    --background-lightest: #fbfbfb;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply container mx-auto px-4 md:px-8 lg:px-16;
+  }
+  
+  .heading-xl {
+    @apply font-bricolage text-5xl md:text-6xl lg:text-7xl font-bold;
+  }
+  
+  .heading-lg {
+    @apply font-sf-pro text-3xl md:text-4xl lg:text-5xl font-bold;
+  }
+  
+  .heading-md {
+    @apply font-sf-pro text-2xl md:text-3xl font-semibold;
+  }
+  
+  .heading-sm {
+    @apply font-sf-pro text-xl md:text-2xl font-semibold;
+  }
+  
+  .body-lg {
+    @apply font-sf-pro text-lg leading-relaxed;
+  }
+  
+  .body-md {
+    @apply font-sf-pro text-base leading-relaxed;
+  }
+  
+  .body-sm {
+    @apply font-sf-pro text-sm leading-relaxed;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
